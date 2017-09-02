@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "bundle": "node ./node_modules/webpack/bin/webpack.js",
-    "start": "npm run bundle && start ./src/home.html"
+    "start": "npm run bundle && node server/app.js"
   },
   "dependencies": {
     "css-loader": "^0.28.7",
+    "express": "^4.15.4",
     "vue-loader": "^13.0.4",
     "vue-template-compiler": "^2.4.2"
   },

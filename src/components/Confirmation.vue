@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Confirmation page</p>
+        <p class="confirmationTitle">Confirmation page</p>
         <button @click="goTo('home')">Start Over</button>
     </div>
 </template>
@@ -12,13 +12,15 @@ module.exports = {
         }
     },
     methods: {
-        goTo: function(route) {
-            this.$router.push(route)
-        }
+
     }
 }
 </script>
 
 <style>
+
+.confirmationTitle {
+    color: navy;
+}
 
 </style>

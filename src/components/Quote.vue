@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Quote page</p>
+        <p class="quoteTitle">Quote page</p>
         <button @click="goTo('confirmation')">Go To Confirmation Page</button>
     </div>
 </template>
@@ -12,13 +12,15 @@ module.exports = {
         }
     },
     methods: {
-        goTo: function(route) {
-            this.$router.push(route)
-        }
+
     }
 }
 </script>
 
 <style>
+
+.quoteTitle {
+    color: purple;
+}
 
 </style>

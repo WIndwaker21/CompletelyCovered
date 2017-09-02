@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Bumper page</p>
+        <p class="bumperTitle">Bumper page</p>
         <button @click="goTo('quote')">Go To Quote Page</button>
     </div>
 </template>
@@ -12,13 +12,15 @@ module.exports = {
         }
     },
     methods: {
-        goTo: function(route) {
-            this.$router.push(route)
-        }
+
     }
 }
 </script>
 
 <style>
+
+.bumperTitle {
+    color: green;
+}
 
 </style>

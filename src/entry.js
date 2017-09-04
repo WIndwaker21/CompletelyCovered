@@ -19,6 +19,7 @@ var routes = [
 //initialize the router with defined routes
 var router = new VueRouter({ routes })
 
+//Define global functions that are inherited by all Vue Components
 Vue.mixin({
   methods: {
     goTo: function (route) {
@@ -27,10 +28,14 @@ Vue.mixin({
   }
 })
 
+//initialize Vuex store (db)
+import store from './db/store'
+
 //initialize the vue, and link it to a element
 var app = new Vue({
   el: '#app',
   router: router,
+  store: store,
   data: {
     message: 'Hello Vue.js!',
   }
